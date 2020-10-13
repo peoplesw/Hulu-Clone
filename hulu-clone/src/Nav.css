@@ -1,0 +1,37 @@
+.nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: white;
+    overflow-x: scroll;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+/* Hide scrollbar for Chrome, Safari, and Opera */
+.nav::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for IE, Edge, Firefox */
+.nav {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+}
+
+.nav h3 {
+    cursor: pointer;
+    margin-right: 30px;
+    margin-left: 30px;
+    font-weight: 400;
+    opacity: 0.7;
+    font-size: 23px;
+    transition: transform .05s;
+}
+
+.nav h3:hover {
+    opacity: 1;
+    transform: scale(1.2);
+}

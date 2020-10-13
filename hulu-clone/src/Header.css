@@ -1,0 +1,57 @@
+.header {
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    overflow-x: scroll;
+}
+
+/* Hide scrollbar for Chrome, Safari, and Opera */
+.header::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for IE, Edge, Firefox */
+.header {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+}
+
+.header_icons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.header img {
+    object-fit: contain;
+    height: 60px;
+    cursor: pointer;
+}
+
+.header_icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.header-icon--active p {
+    display: initial !important;
+}
+
+.header_icon p {
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: small;
+    display: none;
+}
+
+.header_icon:hover p {
+    display: initial;
+} 
